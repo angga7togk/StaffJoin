@@ -28,6 +28,8 @@ class Main extends PluginBase implements Listener {
             if($this->config->exists($i)){
                 if($player->hasPermission($this->config->get($i)["Permission"])){
                     $this->getServer()->broadcastMessage($this->config->get($i)["Prefix"]." ".str_replace ("{player}", $player->getName(), $this->config->get($i)["Message-Join"]));
+                } else {
+                    $this->getServer()->broadcastMessage($this->config->get(str_replace ("{player}", $player->getName(), $this->config->get("Msg-Quit-Default"))));
                 }
             }
         }
@@ -41,6 +43,8 @@ class Main extends PluginBase implements Listener {
             if($this->config->exists($i)){
                 if($player->hasPermission($this->config->get($i)["Permission"])){
                     $this->getServer()->broadcastMessage($this->config->get($i)["Prefix"]." ".str_replace ("{player}", $player->getName(), $this->config->get($i)["Message-Quit"]));
+                } else {
+                    $this->getServer()->broadcastMessage($this->config->get(str_replace ("{player}", $player->getName(), $this->config->get("Msg-Quit-Default"))));
                 }
             }
         }
