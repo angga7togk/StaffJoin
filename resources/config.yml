@@ -1,0 +1,28 @@
+# Example
+#
+# 1 - 100:
+#   Prefix: "early message"
+#   Permission: "permission to Message"
+#   Message-Join: "first message enter the game"
+#   Message-Quit: "message exit game"
+
+1:
+  Prefix: "§r[ §l§eAdmin§r ]"
+  Permission: "admin.msg"
+  Message-Join: "§a{player} §ejoined the game."
+  Message-Quit: "§a{player} §cexit the game."
+2:
+  Prefix: "§r[ §l§bOwner§r ]"
+  Permission: "owner.msg"
+  Message-Join: "§a{player} §ejoined the game."
+  Message-Quit: "§a{player} §cexit the game."
+3:
+  Prefix: "§r[ §l§1Police§r ]"
+  Permission: "police.msg"
+  Message-Join: "§a{player} §ejoined the game."
+  Message-Quit: "§a{player} §cexit the game."
+4:
+  Prefix: "§r[ §l§gStaff§r ]"
+  Permission: "staff.msg"
+  Message-Join: "§a{player} §ejoined the game."
+  Message-Quit: "§a{player} §cexit the game."
